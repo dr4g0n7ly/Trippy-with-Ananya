@@ -1,0 +1,286 @@
+body {
+    overflow-x: hidden;
+    background-image: url("public/bg.png");
+    background-repeat: repeat-y;
+}
+h1 {
+    margin: 0%;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 180px;
+}
+
+h2 {
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 54px;
+}
+
+
+h3 {
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.map-card {
+    padding: 2%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.map-card:hover {
+    transform: scale(1.05);
+}
+
+.map-card h3 {
+    font-size: 24px;
+    padding: 6px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.map-card h3:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.map-card-row {
+    padding-top: 20px;
+}
+
+.pic {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+#loading {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background: #F9F1ED url('https://media.giphy.com/media/1yk0tvQtcpnaIawrMO/giphy.gif') 
+    no-repeat center;
+    z-index: 99999;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(17px);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+#collection {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-div {
+    /* background-color: #F9F1ED; */
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 30px;
+}
+
+#map {
+    width: 300PX;
+    height: 300px;
+    background-color: grey;
+    border-radius: 100%;
+}
+
+#love {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#love h1 {
+    transition: all 0.3s ease-in-out;
+    font-size: 72px;
+    font-weight: 600;
+}
+
+#love h2 {
+    font-size: 50px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h3 {
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h4 {
+    font-size: 60px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h5 {
+    font-size: 44px;
+    font-weight: 200;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h6 {
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h7 {
+    font-size: 80px;
+    font-weight: 200;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h8 {
+    font-size: 44px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h9 {
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h10 {
+    font-size: 60px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+#love h1:hover {
+    transform: scale(1.2);
+}
+#love h2:hover {
+    transform: scale(1.2);
+}
+#love h3:hover {
+    transform: scale(1.2);
+}
+#love h4:hover {
+    transform: scale(1.2);
+}
+#love h5:hover {
+    transform: scale(1.2);
+}
+#love h6:hover {
+    transform: scale(1.2);
+}
+#love h7:hover {
+    transform: scale(1.2);
+}
+#love h8:hover {
+    transform: scale(1.2);
+}
+#love h9:hover {
+    transform: scale(1.2);
+}
+#love h10:hover {
+    transform: scale(1.2);
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: right;
+    width: 120%;
+    overflow-x: hidden;
+}
+
+.slideshow-container img {
+    /* height: 100%; */
+    position: center;
+    width: 120%;
+    /* object-fit: contain; */
+    padding: 30px;
+
+}
+
+
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+}
+
+.gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+    transition: .3s;
+}
+
+.gallery__thumb {
+    position: relative;
+}
+
+.gallery__image {
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
+
+.gallery__image:hover {
+    transform: scale(1.1);
+}
+
+/* .gallery :hover .gallery__image {
+    filter: grayscale(1);
+} */
+
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.gallery__link {
+    margin: 2px;
+    overflow: hidden;
+}
+
+.bitch{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #F9F1ED
+    url('https://media.giphy.com/media/1yk0tvQtcpnaIawrMO/giphy.gif')
+    no-repeat center;
+    z-index:9999;
+  }
